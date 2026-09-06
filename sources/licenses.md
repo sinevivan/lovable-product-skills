@@ -1,60 +1,100 @@
-# Licenses (Лицензии)
+# Licensing and Attribution Notice
 
-## Overview / Обзор
-
-This repository is a **synthesized adaptation** of various external works.  
-We do **not** claim verbatim redistribution rights for any third‑party material.  
-All external projects retain their own copyright and licensing terms.
-
-Before copying any substantial text or code from the sources listed below, **review the repository and the file‑level license at the current revision** to ensure compliance.
-
-Этот репозиторий представляет собой **синтезированную адаптацию** различных внешних работ.  
-Мы **не претендуем** на право прямого распространения материалов третьих сторон.  
-Все внешние проекты сохраняют свои авторские права и лицензии.
-
-Перед копированием любого существенного текста или кода из перечисленных ниже источников **обязательно проверьте репозиторий и лицензию файла в текущей ревизии**, чтобы убедиться в соблюдении условий.
+**Version:** 1.0.0 **Date:** 2026‑09‑06  
 
 ---
 
-## Sources / Источники
+## 1. Overview  
 
-| # | Source | License (as of latest revision) | Review Status |
-|---|--------|--------------------------------|---------------|
-| 1 | Project A – `https://example.com/project-a` | MIT | **Review required** |
-| 2 | Library B – `https://github.com/example/lib-b` | Apache‑2.0 | **Review required** |
-| 3 | Documentation C – `https://docs.example.com/c` | CC‑BY‑4.0 | **Review required** |
-| 4 | Code snippet D – `https://gist.github.com/user/d` | GPL‑3.0 | **Review required** |
-| 5 | Asset E – `https://assets.example.com/e` | Proprietary (All rights reserved) | **Review required** |
-
-> **Note:** Every listed source is marked **Review required** unless a fresh verification has been performed and the status is updated accordingly.
+This repository contains **synthesized original instructions** derived from general methods and best‑practice guidelines. The content is **not** a verbatim redistribution of any external work. All external sources referenced retain their original copyrights and any associated licenses.
 
 ---
 
-## Contribution Hygiene Checklist / Чек‑лист по гигиене вклада
+## 2. Source Material & Rights  
 
-- [ ] **Verify License** – Confirm the license of the source material at the exact revision you intend to use.  
-- [ ] **Check Compatibility** – Ensure the source license is compatible with the repository’s overall licensing model.  
-- [ ] **Document Changes** – Record any modifications made to the original material, including line‑by‑line diffs when feasible.  
-- [ ] **Add Attribution** – Include a clear attribution block (see Attribution Checklist).  
-- [ ] **Update Source Table** – If a source has been verified, change its status from *Review required* to *Verified (date)*.  
-- [ ] **Run License Scan** – Use an automated license‑scanning tool (e.g., FOSSology, ScanCode) on new contributions.  
-- [ ] **Seek Legal Review** – For ambiguous or proprietary licenses, obtain a legal opinion before merging.  
+| Item | Origin | Rights Holder | License (as of commit) |
+|------|--------|---------------|------------------------|
+| Core instructional text | Internally generated synthesis | © 2026 Your Organization | **Review‑required** (must be verified against the specific commit) |
+| External references (e.g., standards, APIs) | Third‑party documentation | Respective owners | As indicated by the original source (e.g., MIT, Apache 2.0, proprietary) |
+| Examples / galleries / named awarded sites | Publicly available web pages | Original creators | Retain original rights; use **reference only** |
 
----
-
-## Attribution Checklist / Чек‑лист атрибуции
-
-- [ ] **Author(s) Name(s)** – List the original author(s) or organization.  
-- [ ] **Original Title** – Provide the title of the work or component.  
-- [ ] **Source URL** – Include a permanent link to the original location.  
-- [ ] **License Text** – Attach or reference the full license text of the source.  
-- [ ] **Modification Notice** – State what has been changed, added, or removed.  
-- [ ] **Date of Access** – Record the date when the source was accessed or downloaded.  
+*If a file’s license cannot be confirmed, treat it as **review‑required** before reuse.*
 
 ---
 
-## Final Remarks / Заключительные замечания
+## 3. License Status  
 
-- This file itself is licensed under **CC‑BY‑4.0** (Creative Commons Attribution 4.0 International).  
-- By contributing to this repository, you agree to adhere to the above hygiene and attribution procedures.  
-- If you discover a licensing conflict, please open an issue immediately so the repository can be updated accordingly.
+- **Repository‑wide default:** *All content is provided under a permissive “CC‑BY‑4.0‑style” attribution license **subject to review**.*  
+- **Exact source‑file licenses** must be inspected per commit. Until verification, assume **review‑required**.  
+- **Popularity or widespread use** does **not** confer any additional rights.
+
+---
+
+## 4. Safe Adaptation Guidelines  
+
+1. **Read the license** attached to each file (or the repository‑wide notice) before copying.  
+2. **Preserve attribution** lines when re‑using or remixing material.  
+3. **Document the commit hash** or version tag you based your adaptation on (see § 6).  
+4. **Do not remove or alter** any provenance metadata (e.g., author comments, source URLs).  
+5. **Test** the adapted material in isolation to ensure it does not inadvertently inherit protected assets (e.g., images, logos).
+
+---
+
+## 5. Prohibited Practices  
+
+- **Blind copying** of any file without confirming its license.  
+- **Cloning visual layouts** of referenced galleries, award‑site screenshots, or UI mock‑ups.  
+- **Removing or obscuring attribution** statements.  
+- **Redistributing** external source files under a different license without explicit permission.  
+
+---
+
+## 6. Attribution Requirements  
+
+When re‑using content from this repository:
+
+```markdown
+> © 2026 Your Organization. Adapted from “<File‑Path>” (commit `<SHA‑1>`).  
+> Licensed under a review‑required license; see the repository’s LICENSE file for details.
+```
+
+- Include the **author name**, **year**, **file path**, and **commit identifier**.  
+- If the original source is external, add the original author and license as indicated in the source file’s header.
+
+---
+
+## 7. Revision Pinning & Provenance  
+
+| Step | Action |
+|------|--------|
+| 1 | Identify the exact commit hash (or tag) of the source you intend to use. |
+| 2 | Record the hash in your project’s `NOTICE.md` or equivalent. |
+| 3 | Keep a copy of the original file’s header (license, attribution) in your repository. |
+| 4 | When updating, repeat steps 1‑3 to maintain a clear provenance trail. |
+
+---
+
+## 8. Contribution Checklist  
+
+Before submitting a pull request or committing new material, ensure the following:
+
+- [ ] **License verified** – the file’s license is known and compatible.  
+- [ ] **Attribution present** – any borrowed ideas or excerpts include proper credit.  
+- [ ] **No protected assets** – images, logos, or UI designs are original or cleared for reuse.  
+- [ ] **Documentation updated** – commit hash, source URLs, and any license changes are recorded.  
+- [ ] **Legal disclaimer** – the contribution does not claim legal certainty; it is provided “as‑is”.  
+
+---
+
+## 9. Visual Reference Disclaimer  
+
+The repository may contain **examples, galleries, or links to named awarded sites** solely for **reference**. These visual assets:
+
+- Must **not** be duplicated, reproduced, or visually cloned in any downstream product.  
+- May be **linked to** or **cited** with proper attribution, but the actual visual content remains the property of its original creator.  
+
+---
+
+## 10. Disclaimer of Legal Advice  
+
+The information provided herein is **not legal advice** and does not guarantee any particular legal outcome. Users are encouraged to consult qualified counsel to confirm compliance with applicable copyright, trademark, and licensing requirements before reusing or distributing any part of this repository.

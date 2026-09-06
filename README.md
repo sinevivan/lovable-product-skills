@@ -1,117 +1,132 @@
-# Lovable Workspace Skills Repository  
+# Lovable Product Skills  
+**Репозиторий:** `sinevivan/lovable-product-skills`  
 
-## Purpose  
-A Russian‑first guide for creating, organizing, and maintaining **Lovable Workspace** skills. It explains the repository layout, how to transfer skill metadata into Lovable, provides a quick‑start for the six core skills, outlines workflow chains, and defines maintenance and versioning practices.
+---
 
----  
+## 📂 Структура репозитория  
 
-## Repository Map  
+| Путь | Описание |
+|------|----------|
+| `workspace-knowledge.md` | Общие сведения о рабочем пространстве, принципы организации знаний и рекомендации по их поддержанию. |
+| `project-knowledge-template.md` | Шаблон для создания проектных знаний: поля, форматирование и примеры заполнения. |
+| `skills/01‑22/` | 22 навыка‑модуля, каждый в отдельном файле `README.md`. Номера соответствуют порядку освоения. |
+| `workflows/award-caliber-site-workflow.md` | Полный энд‑то‑энд процесс создания сайта, способного претендовать на премию Awwwards. |
+| `prompts/` | Набор готовых подсказок (prompt‑ов) для генеративных моделей, используемых в рамках навыков. |
+| `sources/` | Список внешних источников, исследований и вдохновения, применяемых в работе. |
 
-| Directory / File | Description |
-|------------------|-------------|
-| `core/` | Six core skill definitions (JSON/YAML) |
-| `chains/` | Pre‑built workflow chains that combine core skills |
-| `docs/` | Additional documentation, examples, and diagrams |
-| `scripts/` | Helper scripts (e.g., validation, linting) |
-| `README.md` | This guide |
-| `CHANGELOG.md` | Version history |
-| `LICENSE` | Repository license |
+> **Важно:** В репозитории **нет** каталогов `core/`, `chains/` или `scripts/`. Все процессы описаны в markdown‑файлах выше.
 
----  
+---
 
-## Manual Transfer of Skill Metadata  
+## 🛠️ Как вручную перенести данные в Lovable  
 
-Each skill consists of three required fields: **Name**, **Description**, and **Instructions**. To import them into Lovable manually:
+1. Откройте файл навыка (например, `skills/01/README.md`).  
+2. Найдите секции:  
 
-1. **Open the skill file** in `core/` (e.g., `core/translation_skill.json`).  
-2. **Locate the metadata section** (top‑level keys).  
-3. **Copy the values**:  
-   - `Name` → the skill’s display name.  
-   - `Description` → a short Russian‑language summary (≤ 120 characters).  
-   - `Instructions` → detailed step‑by‑step guidance, written in Russian, using Markdown when needed.  
-4. **Paste into Lovable UI**:  
-   - Navigate to **Workspace → Skills → Add New**.  
-   - Fill the three fields with the copied text.  
-   - Click **Save**.  
-5. **Validate**: Run the repository’s linter (`npm run lint` or `python -m scripts.lint`) to ensure JSON/YAML syntax is correct before uploading.  
+   ```markdown
+   ## Name
+   …  
 
-> **Tip:** Keep the original files as the source of truth; any change must be reflected both in the repository and in Lovable.
+   ## Description
+   …  
 
----  
+   ## Instructions
+   …
+   ```  
 
-## Six Core Skills – Quick Start  
+3. Скопируйте **точный** текст из каждой из этих секций.  
+4. В интерфейсе Lovable вставьте скопированное содержимое в соответствующие поля: **Name → Name**, **Description → Description**, **Instructions → Instructions**.  
+5. Сохраните изменения.  
 
-| Skill | Name (RU) | Description (RU) | Key Instructions |
-|-------|-----------|-------------------|------------------|
-| 1 | **Переводчик** | Быстрый перевод текста между языками. | 1. Введите исходный текст.<br>2. Выберите язык‑источник и язык‑цель.<br>3. Нажмите **Перевести**. |
-| 2 | **Резюмирующий** | Сокращает длинные документы до ключевых пунктов. | 1. Вставьте документ.<br>2. Укажите желаемую длину резюме.<br>3. Нажмите **Создать резюме**. |
-| 3 | **Анализатор Тональности** | Оценивает эмоциональную окраску текста. | 1. Введите текст.<br>2. Нажмите **Анализировать**.<br>3. Просмотрите шкалу от «негативно» до «позитивно». |
-| 4 | **Генератор Идей** | Предлагает креативные идеи по заданной теме. | 1. Укажите тему/контекст.<br>2. Выберите количество вариантов.<br>3. Нажмите **Генерировать**. |
-| 5 | **Планировщик Задач** | Создаёт список задач с приоритетами и сроками. | 1. Введите цель проекта.<br>2. Добавьте задачи и сроки.<br>3. Сохраните план. |
-| 6 | **Контроль Версий** | Автоматически фиксирует изменения навыков. | 1. После изменения файла запустите `git commit -m "Update <skill>"`.<br>2. Тегируйте релиз (`git tag vX.Y.Z`). |
+Повторите процесс для всех навыков, которые хотите импортировать.
 
-**Getting started:**  
-```bash
-# Clone the repo
-git clone https://github.com/your-org/lovable-workspace-skills.git
-cd lovable-workspace-skills
+---
 
-# Install optional linting tools
-pip install -r requirements.txt
+## ⭐ Шесть базовых навыков (рекомендовано освоить в первую очередь)
+
+| № | Навык | Краткое назначение |
+|---|-------|--------------------|
+| 1 | **Product Discovery** | Исследование потребностей рынка, формулирование гипотез и валидация идеи. |
+| 2 | **PRD Architect** | Создание детального Product Requirements Document: цели, функции, метрики. |
+| 3 | **MVP Scope Cutter** | Выделение минимального жизнеспособного продукта, отказ от лишних фич. |
+| 4 | **Landing Conversion Architect** | Проектирование посадочных страниц с максимальной конверсией. |
+| 5 | **Memorable Site Concept Director** | Формирование уникальной концепции сайта, отражающей бренд и эмоции. |
+| 6 | **UI Critique Release Gate** | Критический аудит UI перед релизом: юзабилити, визуальная согласованность, готовность к публикации. |
+
+Эти навыки образуют фундаментальный «ядро‑цепочку», после которой следует более специализированный набор.
+
+---
+
+## 🎨 Creative Direction Pack (навыки 18‑22)
+
+| № | Навык | Роль в цепочке |
+|---|-------|----------------|
+| 18 | **Storytelling Visualizer** | Превращает концепцию в визуальный нарратив, подбирает стили и анимацию. |
+| 19 | **Brand Tone Curator** | Определяет голос бренда и адаптирует его под все точки контакта. |
+| 20 | **Interaction Designer** | Проектирует микровзаимодействия, повышающие вовлечённость. |
+| 21 | **Motion Graphics Director** | Создаёт динамические элементы, усиливающие эмоциональный отклик. |
+| 22 | **Award‑Ready Polish Engineer** | Финальная полировка, проверка соответствия критериям премий (Awwwards, CSS Design Awards). |
+
+**Как использовать:** После завершения базовых шести навыков переходите к Creative Direction Pack. Последовательность 18 → 19 → 20 → 21 → 22 обеспечивает полное творческое оформление проекта, готовое к оценке жюри премий.
+
+---
+
+## 🔄 Энд‑то‑энд цепочки рабочих процессов  
+
+### 1️⃣ **Core Workflow** (базовые 6 навыков)  
+
 ```
-*(The above commands are illustrative; actual setup may vary.)*
+Product Discovery → PRD Architect → MVP Scope Cutter → Landing Conversion Architect → Memorable Site Concept Director → UI Critique Release Gate
+```  
 
----  
+### 2️⃣ **Creative Direction Chain** (навыки 18‑22)  
 
-## Workflow Chains  
+```
+Storytelling Visualizer → Brand Tone Curator → Interaction Designer → Motion Graphics Director → Award‑Ready Polish Engineer
+```  
 
-Workflow chains combine multiple core skills to solve complex tasks. Example chain: **Переводчик → Резюмирующий → Анализатор Тональности**.
+### 3️⃣ **Full Award‑Caliber Workflow**  
 
-1. **Create a chain file** in `chains/` (e.g., `translation_summary_sentiment.json`).  
-2. Define the ordered list of skill IDs and data mapping between them.  
-3. Upload the chain via Lovable UI → **Chains → Add New**.  
-4. Test the chain with a sample input; adjust mappings if needed.  
+```
+Core Workflow
+   ↓
+Project Knowledge (workspace-knowledge.md + project-knowledge-template.md)
+   ↓
+Creative Direction Chain
+   ↓
+workflows/award-caliber-site-workflow.md
+   ↓
+Prompts (для генеративных моделей) → Sources (исследования, референсы)
+   ↓
+Final Review & Submission to Awwwards
+```  
 
-Common ready‑made chains (found in `chains/`):
+Каждый шаг фиксируется в соответствующем markdown‑файле, а прогресс отмечается в `workspace-knowledge.md`.
 
-| Chain Name | Steps | Use Case |
-|------------|-------|----------|
-| `doc_localization` | Переводчик → Резюмирующий | Быстрая локализация и сокращение технической документации. |
-| `feedback_analysis` | Анализатор Тональности → Генератор Идей | Оценка отзывов и генерация улучшений продукта. |
-| `project_bootstrap` | Планировщик Задач → Генератор Идей | Планирование нового проекта с креативными предложениями. |
+---
 
----  
+## 📈 Версионирование  
 
-## Maintenance & Versioning  
+* **Git‑теги** используются для обозначения стабильных релизов (например, `v1.0.0`, `v1.1.0`).  
+* При добавлении нового навыка или изменении workflow создаётся **pull request** с описанием изменений. После одобрения – новый тег.  
+* Файл `CHANGELOG.md` (если появится) будет вести журнал изменений.
 
-| Activity | Frequency | Procedure |
-|----------|-----------|-----------|
-| **Code linting** | On each PR | Run `scripts/lint.py`; fix any violations before merge. |
-| **Skill validation** | Nightly | CI job executes `scripts/validate_skills.py` against all files in `core/`. |
-| **Documentation update** | When a skill or chain changes | Edit `README.md` or relevant docs, then commit with `docs:` prefix. |
-| **Release** | After a set of stable changes | 1. Merge to `main`.<br>2. Tag with semantic version (`vMAJOR.MINOR.PATCH`).<br>3. Update `CHANGELOG.md`. |
-| **Backup** | Weekly | Push repository to a secondary remote (`git remote add backup …`). |
+---
 
-### Versioning Scheme  
+## 🏆 Awwwards – цель, а не гарантия  
 
-- **MAJOR** – Breaking changes to skill schema or API.  
-- **MINOR** – New skills, chains, or backward‑compatible enhancements.  
-- **PATCH** – Bug fixes, linting, documentation tweaks.  
+* **Awwwards** упоминается как **амбицийный ориентир**: набор критериев (дизайн, креативность, техническая реализация), к которым стремятся авторы.  
+* Достижение премии **не гарантировано**; процесс в workflow помогает подготовить материал, соответствующий высоким стандартам, но окончательное решение принимает жюри.  
+* Мы рекомендуем использовать Awwwards как **benchmark** для измерения качества, а не как обязательный результат.
 
-All releases are announced in the repository’s **Releases** page and include a short changelog.
+---
 
----  
+## 📚 Дополнительные ресурсы  
 
-## Contributing  
+* **`prompts/`** – готовые подсказки для ChatGPT, Midjourney и других моделей, используемых в навыках.  
+* **`sources/`** – библиография, ссылки на кейсы, статьи и исследования, которые поддерживают каждый навык.  
+* **`workspace-knowledge.md`** – правила совместной работы, система тегов и рекомендации по документированию.  
 
-1. Fork the repository.  
-2. Create a feature branch (`git checkout -b feature/<name>`).  
-3. Add or modify skill/chain files.  
-4. Run lint & validation scripts.  
-5. Open a Pull Request with a clear description (use the `feat:` or `fix:` prefix).  
+---
 
----  
-
-## License  
-
-This repository is licensed under the **MIT License**. See the `LICENSE` file for details.
+*Этот README написан в первую очередь на русском языке, но ключевые названия навыков оставлены на английском для удобства поиска и интеграции с инструментами.*
