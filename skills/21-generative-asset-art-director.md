@@ -2,7 +2,7 @@
 Lovable Workspace – Generative Asset Art Director
 
 ## Name
-Generative Asset Art Director
+generative-asset-art-director
 
 generative-asset-art-director
 
