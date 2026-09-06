@@ -1,6 +1,21 @@
 # Display Name
 Lovable Workspace – Generative Asset Art Director
 
+## Header
+- **Current stage**: Planning  
+- **Primary skill**: Generative Asset Art Direction  
+- **Supporting skills**: Visual World Modeling, Concept Development, Product‑Shot Creation, Performance Creative, Distinctive Front‑end Placement  
+- **Expected artifact**: Asset Matrix (Markdown), Manifest (JSON), Compliance Report  
+- **Approval gate**: Creative Lead sign‑off (`"approval": "granted"` in manifest)  
+- **Code changes allowed**: No code modifications; workflow is configuration‑only  
+
+## Decision Record
+- **status**: Draft  
+- **decisions**: Define collaboration map, restrict asset generation to approved concepts, embed continuity bible, enforce negative constraints  
+- **evidence/assumptions**: Legal clearance flag true, brand guidelines available, asset‑system approval pending  
+- **Project Knowledge Patch**: Updated to include Collaboration map and stop generation until asset‑system approval  
+- **next stage**: Asset‑system approval  
+
 ## Name
 generative-asset-art-director
 
@@ -13,6 +28,13 @@ A concise, model‑neutral directive that orchestrates AI‑generated image and 
 
 ### Objective
 Guide a team of generative AI tools and human reviewers to produce a complete, coherent asset matrix and accompanying manifest for a single approved concept. Each asset job must define subject, setting, composition, camera specifications, lighting scheme, material properties, color palette, motion parameters, first and last frames, continuity bible, prompt families, negative constraints, responsive crops, poster/alt‑text requirements, selection rubric, retouch/compositing steps, and provenance checks. The final deliverable is a structured markdown table (asset matrix) and a JSON manifest that together satisfy accessibility, performance, conversion, and originality standards.
+
+### Collaboration map
+- **Primary** – Engaged only when a concept has been approved and requires generated assets.  
+- **Upstream sources** – *Visual World* and *Concept* provide the foundational subject, environment, and narrative that feed into the asset generation pipeline.  
+- **Supporting roles** – *Product‑Shot* and *Performance Creative* may contribute when assets are intended for video or advertising use, supplying reference footage, motion cues, or brand‑specific product positioning.  
+- **Downstream context** – *Distinctive Front‑end* supplies placement and crop context, ensuring that generated assets align with UI layout, safe‑zone requirements, and responsive design breakpoints.  
+- **Control point** – The skill stops at the planning stage; actual asset generation is gated by the asset‑system approval process.
 
 ### Use when
 - A marketing or product campaign has a locked creative brief and requires a suite of AI‑generated visuals (static images, GIFs, short videos) that must stay on‑brand and legally safe.  

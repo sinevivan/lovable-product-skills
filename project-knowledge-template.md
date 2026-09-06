@@ -1,131 +1,158 @@
-# Project Knowledge Template
+# Project Knowledge Template  
 
-A concise, fill‑in‑the‑blank markdown template to capture the essential context for any project. Copy the file, replace the placeholders, and commit.
+---  
 
----
+## 1. Workflow Control  
 
-## 1. Product Overview
-- **Name:** `{{Product Name}}`
-- **Tagline / Short Description:** `{{One‑sentence summary}}`
-- **Primary Goal:** `{{What the product aims to achieve}}`
+| Field                     | Value / Description |
+|---------------------------|---------------------|
+| **Current Stage**         | `[Enter stage, e.g., Discovery, Design, Development, Validation]` |
+| **Current Mode**          | `[Enter mode, e.g., Planning, Execution, Review]` |
+| **Primary Skill**         | `[Enter primary skill required]` |
+| **Supporting Skills**     | `- [Skill 1]  <br> - [Skill 2]  <br> - [Skill 3]` |
+| **Code Changes Allowed**  | `Yes / No (specify scope)` |
+| **Last Approved Gate**    | `[#Gate ID – Description – Date]` |
+| **Next Gate**             | `[#Gate ID – Description – Target Date]` |
+| **Blocking Issues**       | `- [Issue 1]  <br> - [Issue 2]  <br> - [Issue 3]` |
 
----
+---  
 
-## 2. Target Audience
-| Segment | Description | Pain Points | Desired Outcomes |
-|---------|-------------|-------------|------------------|
-| `{{Segment 1}}` | `{{Who they are}}` | `{{Key frustrations}}` | `{{What success looks like}}` |
-| `{{Segment 2}}` | `{{Who they are}}` | `{{Key frustrations}}` | `{{What success looks like}}` |
+## 2. Decision Log  
+
+| Date / Version | Stage | Decision | Status (Approved / Rejected / Pending) | Rationale / Evidence | Assumptions | Implications | Owner |
+|----------------|-------|----------|----------------------------------------|----------------------|-------------|--------------|-------|
+| `YYYY‑MM‑DD vX.Y` | `[Stage]` | `[Brief decision description]` | `Approved` | `[Key reasons, data, research]` | `[Assumed conditions]` | `[Impact on scope, timeline, budget, etc.]` | `[Name / Team]` |
+| `YYYY‑MM‑DD vX.Y` | `[Stage]` | `[Brief decision description]` | `Pending` | `[Key reasons, data, research]` | `[Assumed conditions]` | `[Impact on scope, timeline, budget, etc.]` | `[Name / Team]` |
+| *(add more rows as needed)* | | | | | | | |
+
+---  
+
+## 3. Approved Foundations  
+
+### 3.1 Product Truth  
+`[Clear, immutable statement of the product’s core reality]`  
+
+### 3.2 Big Idea  
+`[High‑level, inspiring concept that guides the product]`  
+
+### 3.3 Selected Concept  
+`[Chosen design/experience concept with brief justification]`  
+
+### 3.4 Signature Moments  
+- **Moment 1:** `[Description]`  
+- **Moment 2:** `[Description]`  
+- **Moment 3:** `[Description]`  
+
+### 3.5 Visual World  
+`[Key visual language, style guide references, mood board links]`  
+
+### 3.6 Interaction Rules  
+- **Rule 1:** `[Interaction principle]`  
+- **Rule 2:** `[Interaction principle]`  
+- **Rule 3:** `[Interaction principle]`  
+
+### 3.7 Asset Continuity  
+`[Guidelines for asset reuse, naming conventions, versioning]`  
+
+### 3.8 Representative Slice  
+| Slice ID | Definition | Status (Draft / Review / Approved) | Owner |
+|----------|------------|------------------------------------|-------|
+| `RS‑001` | `[Brief description of the slice]` | `Draft` | `[Name]` |
 | *(add more rows as needed)* | | | |
 
----
+### 3.9 Critique Levels & Readiness  
 
-## 3. Jobs‑to‑Be‑Done (JTBD)
-- **Core Job:** `{{Primary functional job the user hires the product for}}`
-- **Emotional Job:** `{{Emotional or social need addressed}}`
-- **Supporting Jobs:**  
-  - `{{Job A}}`  
-  - `{{Job B}}`  
+| Priority | Focus Area | Findings | Action Required | Readiness (P0/P1/P2) |
+|----------|------------|----------|-----------------|----------------------|
+| **P0** (Critical) | `[Area]` | `[Key issues]` | `[Mitigation steps]` | `P0` |
+| **P1** (High)    | `[Area]` | `[Key issues]` | `[Mitigation steps]` | `P1` |
+| **P2** (Medium)  | `[Area]` | `[Key issues]` | `[Mitigation steps]` | `P2` |
+| *(add more rows as needed)* | | | | |
 
----
+---  
 
-## 4. Value Proposition
-- **Key Benefits:**  
-  1. `{{Benefit 1}}`  
-  2. `{{Benefit 2}}`  
-  3. `{{Benefit 3}}`  
-- **Differentiators:** `{{What makes this solution unique}}`
+## 4. Core Product Information  
 
----
+| Category | Details |
+|----------|---------|
+| **Product Name** | `[Enter product name]` |
+| **Version** | `[Enter version]` |
+| **Owner / Sponsor** | `[Name / Team]` |
+| **Launch Target** | `[Date / Quarter]` |
+| **Stakeholders** | `- [Stakeholder 1]  <br> - [Stakeholder 2]  <br> - [Stakeholder 3]` |
 
-## 5. Scope
-- **In‑Scope:** `{{Features, platforms, regions, etc.}}`
-- **Out‑of‑Scope:** `{{What is explicitly excluded}}`
-- **Timeline / Milestones:**  
-  - `{{Milestone 1}} – {{Date}}`  
-  - `{{Milestone 2}} – {{Date}}`
+---  
 
----
+## 5. Audience & Jobs‑to‑Be‑Done (JTBD)  
 
-## 6. Roles & Responsibilities
-| Role | Person / Team | Primary Responsibilities |
-|------|---------------|---------------------------|
-| Product Owner | `{{Name}}` | `{{Define backlog, prioritize}}` |
-| Designer | `{{Name}}` | `{{UX/UI, visual direction}}` |
-| Engineer | `{{Name}}` | `{{Implementation, testing}}` |
-| Analyst | `{{Name}}` | `{{Metrics, reporting}}` |
-| *(add more rows as needed)* | | |
+| Segment | Persona | JTBD | Pain Points | Desired Outcomes |
+|---------|---------|------|-------------|------------------|
+| `[Segment A]` | `[Persona name]` | `[Job statement]` | `[Pain]` | `[Outcome]` |
+| `[Segment B]` | `[Persona name]` | `[Job statement]` | `[Pain]` | `[Outcome]` |
+| *(add more rows as needed)* | | | | |
 
----
+---  
 
-## 7. User Flows
-1. **Flow 1 – {{Name}}**  
-   - Step 1: `{{Action}}`  
-   - Step 2: `{{Action}}`  
-   - …  
+## 6. Content Strategy  
 
-2. **Flow 2 – {{Name}}**  
-   - Step 1: `{{Action}}`  
-   - Step 2: `{{Action}}`  
+- **Core Messaging:** `[Key messages]`  
+- **Tone & Voice:** `[Description]`  
+- **Content Types:** `- Blog posts  <br> - Videos  <br> - Guides  <br> - UI copy`  
+- **Localization Needs:** `[Languages / Regions]`  
 
-*(Add additional flows or link to detailed flow diagrams.)*
+---  
 
----
+## 7. Data Requirements  
 
-## 8. Data Requirements
-- **Input Data Sources:** `{{APIs, databases, user input}}`
-- **Stored Data:** `{{Key entities, schema notes}}`
-- **Privacy / Compliance:** `{{GDPR, CCPA, etc.}}`
-- **Retention Policy:** `{{How long data is kept}}`
+| Data Source | Purpose | Frequency | Owner | Security Classification |
+|-------------|---------|-----------|-------|--------------------------|
+| `[Source 1]` | `[Purpose]` | `[Real‑time / Daily / Weekly]` | `[Name]` | `Public / Internal / Confidential` |
+| `[Source 2]` | `[Purpose]` | `[Real‑time / Daily / Weekly]` | `[Name]` | `Public / Internal / Confidential` |
+| *(add more rows as needed)* | | | | |
 
----
+---  
 
-## 9. Visual Direction
-- **Style Guide:** `{{Brand colors, typography, iconography}}`
-- **Mood Board / References:** `{{Links or brief description}}`
-- **Accessibility Targets:** `{{WCAG AA/AAA, contrast ratios}}`
+## 8. Technical Architecture  
 
----
+- **Platform(s):** `[e.g., Web, iOS, Android]`  
+- **Frameworks / Libraries:** `[List]`  
+- **APIs & Integrations:** `[Brief description + endpoints]`  
+- **Infrastructure:** `[Cloud provider, services, CI/CD pipeline]`  
+- **Scalability Considerations:** `[Notes]`  
 
-## 10. Voice & Tone
-- **Brand Voice:** `{{Friendly, professional, witty, etc.}}`
-- **Tone per Context:**  
-  - **Onboarding:** `{{Tone}}`  
-  - **Error States:** `{{Tone}}`  
-  - **Marketing:** `{{Tone}}`
+---  
 
----
+## 9. Metrics & Success Criteria  
 
-## 11. Success Metrics
-| Metric | Target | Measurement Method | Frequency |
-|--------|--------|--------------------|-----------|
-| `{{Metric 1}}` | `{{Goal}}` | `{{Analytics / Survey}}` | `{{Weekly/Monthly}}` |
-| `{{Metric 2}}` | `{{Goal}}` | `{{Analytics / Survey}}` | `{{Weekly/Monthly}}` |
-| *(add more rows as needed)* | | | |
+| Metric | Target | Measurement Method | Reporting Cadence | Owner |
+|--------|--------|--------------------|-------------------|-------|
+| `[Metric 1]` | `[Target value]` | `[Method]` | `[Weekly / Monthly]` | `[Name]` |
+| `[Metric 2]` | `[Target value]` | `[Method]` | `[Weekly / Monthly]` | `[Name]` |
+| *(add more rows as needed)* | | | | |
 
----
+---  
 
-## 12. Constraints
-- **Technical:** `{{Platform limits, legacy systems}}`
-- **Regulatory:** `{{Legal, industry standards}}`
-- **Budget:** `{{Cap, resource allocation}}`
-- **Timeline:** `{{Hard deadlines}}`
+## 10. Security & Compliance  
 
----
+- **Regulatory Requirements:** `[e.g., GDPR, HIPAA]`  
+- **Authentication / Authorization:** `[Methods]`  
+- **Data Encryption:** `At rest / In transit – [Algorithms]`  
+- **Audit Logging:** `[Scope]`  
+- **Risk Mitigations:** `[Key controls]`  
 
-## 13. Key Decisions
-| Decision | Options Considered | Chosen Option | Rationale |
-|----------|-------------------|---------------|-----------|
-| `{{Decision 1}}` | `{{Option A, B, C}}` | `{{Option X}}` | `{{Why this was selected}}` |
-| `{{Decision 2}}` | `{{Option A, B, C}}` | `{{Option Y}}` | `{{Why this was selected}}` |
+---  
 
----
+## 11. Constraints & Assumptions  
 
-## 14. Unknowns & Risks
-- **Open Questions:** `{{What still needs clarification?}}`
-- **Assumptions:** `{{Key assumptions being made}}`
-- **Risks:** `{{Potential blockers, impact, mitigation}}`
+| Constraint | Description |
+|------------|-------------|
+| **Budget** | `[Amount / Limits]` |
+| **Timeline** | `[Key dates, milestones]` |
+| **Resource Availability** | `[Team capacity, skill gaps]` |
+| **Technical Debt** | `[Known limitations]` |
+| **External Dependencies** | `[Third‑party services, approvals]` |
+| **Assumptions** | `- [Assumption 1]  <br> - [Assumption 2]  <br> - [Assumption 3]` |
 
----
+---  
 
-*End of template.*
+*End of Template – fill in each placeholder with project‑specific information.*

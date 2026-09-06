@@ -1,6 +1,25 @@
 # Display Name
 Visual Worldbuilding Director
 
+## Header
+| Field                | Value                                                                 |
+|----------------------|-----------------------------------------------------------------------|
+| Current stage        | Planning                                                               |
+| Primary skill        | Visual Worldbuilding                                                  |
+| Supporting skills    | Typography, Color Theory, Interaction Design, Accessibility            |
+| Expected artifact    | Visual language package (world statement, principles, vocabulary sheet, representative‑frame brief) |
+| Approval gate        | Concept Owner sign‑off (`<!-- APPROVED: YYYY‑MM‑DD -->`)               |
+| Code changes allowed | No code changes; deliverables are design assets only                  |
+
+## Decision Record
+| Field                | Value                                                                 |
+|----------------------|-----------------------------------------------------------------------|
+| status               | Draft                                                                 |
+| decisions            | Revised skill to include Collaboration map and updated workflow      |
+| evidence/assumptions | Need for coordinated handoff between world, frontend, and asset teams |
+| Project Knowledge Patch | Added Collaboration map and clarified upstream source constraints |
+| next stage           | Review by orchestrator and stakeholders                               |
+
 ## Name
 visual-worldbuilding-director
 
@@ -8,6 +27,13 @@ visual-worldbuilding-director
 Transforms a single approved concept into a cohesive visual universe, defining typography, semantic color roles, composition, scale, materiality, texture, lighting, motion grammar, iconography, and image behavior. Every visual decision is traced back to the core concept, ensuring originality, accessibility, performance, and conversion‑focused design.
 
 **Auto‑trigger:** “Generate visual worldbuilding from concept”
+
+### Collaboration map
+- **Primary**: Visual World (handled by the Visual Worldbuilding Director)  
+- **Orchestrator**: Routes requests and ensures alignment across directors.  
+- **Distinctive‑Frontend‑Director**: Required supporting translator from world to web expression.  
+- **Memorable‑Site‑Concept‑Director**: Approved upstream source; cannot be rewritten silently.  
+- **Generative‑Asset Director** and **Interaction Director**: Receive handoffs from the Visual Worldbuilding Director.
 
 ## Instructions
 
@@ -47,7 +73,7 @@ Create a complete visual language that embodies the approved central concept and
 - **Principles Document** (5‑7 principles, each with rule & anti‑rule).  
 - **Accessibility Matrix** mapping each visual token to WCAG compliance checks.  
 - **Performance Checklist** with quantitative limits (e.g., max 150 KB per SVG, 60 fps max animation).  
-- **Vocabulary Sheet** (markdown table: Token | Visual Role | Conceptual Anchor | Usage Guidelines).  
+- **Vocabulary Sheet** (markdown table: Token \| Visual Role \| Conceptual Anchor \| Usage Guidelines).  
 - **Representative‑Frame Brief** (layout sketch description, hierarchy, interaction notes).  
 - **Handoff Manifest** (folder structure, naming conventions, handoff notes for asset production).
 

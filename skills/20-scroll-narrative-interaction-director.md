@@ -1,11 +1,26 @@
 # Display Name
 Scroll Narrative Interaction Director
 
+## Header
+- **Current stage**: Planning
+- **Primary skill**: scroll-narrative-interaction-director
+- **Supporting skills**: frontend-web-expression, accessibility-responsive-qa, react-tailwind-guardrails
+- **Expected artifact**: `skills/20-scroll-narrative-interaction-director.md`
+- **Approval gate**: checklist in `approval-gate.md`
+- **Code changes allowed**: No code changes; planning only
+
 ## Name
 scroll-narrative-interaction-director
 
 ## Description
 A specification that choreographs a scroll‑driven narrative experience, mapping emotional and informational arcs to visual beats, spatial transitions, interaction triggers, state feedback, and performance constraints.
+
+### Collaboration map
+- **Primary** at Experience/Interaction  
+- **Distinctive frontend** supports web expression  
+- **Accessibility‑responsive‑QA** constrains motion/access  
+- **React‑Tailwind‑Guardrails** provides feasibility and budget only  
+- **Visual world** is approved upstream  
 
 ## Instructions
 
@@ -75,6 +90,13 @@ Define a production‑ready interaction blueprint that guides designers and engi
 - **Data privacy** – No third‑party tracking scripts are introduced as part of the interaction flow.  
 - **Error containment** – If any asset fails to load, the fallback UI must remain fully functional and not expose stack traces or raw error messages.  
 - **Device parity** – All interactions must be operable via mouse, touch, and keyboard; no feature is exclusive to a single input modality.  
+
+## Decision Record
+- **Status**: Proposed  
+- **Decisions**: Revise skill to include Collaboration map; limit supporting skills to three orchestrated selections; keep artifact as Markdown plan only, no code.  
+- **Evidence/Assumptions**: Existing workflow already satisfies production needs; orchestrator identified three most relevant supports (frontend‑web‑expression, accessibility‑responsive‑qa, react‑tailwind‑guardrails).  
+- **Project Knowledge Patch**: Updated skill definition now explicitly ties experience/interaction primary focus to upstream visual approval and budget constraints, ensuring alignment across design, accessibility, and feasibility domains.  
+- **Next stage**: Review by orchestrator and stakeholder sign‑off before moving to Implementation Planning.  
 
 ---  
 

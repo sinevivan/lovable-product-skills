@@ -1,120 +1,231 @@
-# Global Operating Charter – Lovable Workspace Skills  
-
-**Purpose**: Provide a unified, English‑language framework that aligns the work of Product Strategists, UX Architects, Art Directors, and Senior Product Engineers across the entire product lifecycle.  
+# Global Operating Charter – Creative Site Orchestration  
 
 ---
 
-## 1. Core Principles  
-
-| Principle | Description |
-|-----------|-------------|
-| **Evidence Discipline** | Every decision is backed by data, prototypes, or validated research. |
-| **Anti‑Template UI** | UI patterns are created to solve real user problems, not to fill pre‑made templates. |
-| **Security‑First** | Threat modeling and privacy considerations are integrated from the earliest plan stage. |
-| **Accessibility‑Inclusive** | WCAG 2.2 AA compliance is a non‑negotiable baseline for all deliverables. |
-| **Quality Assurance** | Continuous testing, automated checks, and peer reviews are embedded in every phase. |
-| **Transparent Completion Report** | A single source of truth that documents outcomes, metrics, and lessons learned. |
+## 1. Vision & Purpose  
+Enable ambitious creative sites to deliver **high‑impact, user‑centric experiences** while guaranteeing **accessibility, security, performance, and quality** through a disciplined, gate‑controlled workflow.
 
 ---
 
-## 2. Roles & Responsibilities  
+## 2. Core Principles  
 
-| Role | Key Responsibilities | Primary Deliverables |
-|------|----------------------|----------------------|
-| **Product Strategist** | • Define market opportunity and business objectives.<br>• Prioritize features based on ROI and user value.<br>• Align roadmap with stakeholder goals. | Market brief, OKR map, Feature prioritization matrix |
-| **UX Architect** | • Conduct user research & journey mapping.<br>• Design information architecture & interaction flows.<br>• Validate concepts with usability testing. | Personas, Journey maps, Wireframes, Usability test reports |
-| **Art Director** | • Establish visual language & brand consistency.<br>• Guide UI aesthetics, motion, and tone.<br>• Ensure designs meet accessibility contrast standards. | Style guide, High‑fidelity mockups, Motion prototypes |
-| **Senior Product Engineer** | • Translate validated designs into scalable code.<br>• Implement security controls and performance optimizations.<br>• Own automated test suites and CI/CD pipelines. | Architecture diagram, Source code, Test coverage reports |
-
----
-
-## 3. End‑to‑End Workflow  
-
-### 3.1 Plan  
-
-1. **Strategic Alignment** – Product Strategist presents market brief & OKRs.  
-2. **Discovery** – UX Architect runs research, creates personas & journey maps.  
-3. **Concept Ideation** – Cross‑functional sketching session (incl. Art Director).  
-4. **Evidence Capture** – Document hypotheses, success metrics, risk register.  
-
-### 3.2 Gate  
-
-| Gate | Criteria | Owner |
-|------|----------|-------|
-| **Strategic Gate** | Business case approved, ROI ≥ target, compliance check passed. | Product Strategist |
-| **Design Gate** | Validated wireframes, accessibility audit cleared, UI anti‑template justification. | UX Architect & Art Director |
-| **Technical Gate** | Architecture reviewed, security threat model signed off, performance budget met. | Senior Product Engineer |
-| **Release Gate** | All QA tests passed, evidence dossier complete, stakeholder sign‑off. | Product Manager (facilitator) |
-
-### 3.3 Build  
-
-* **Iterative Development** – Sprint‑based implementation with continuous integration.  
-* **Evidence Discipline** – Each commit references a ticket linked to a hypothesis or requirement.  
-* **Security & Accessibility** – Automated linting, static analysis, and aXe scans run on every PR.  
-
-### 3.4 Verify  
-
-1. **Automated QA** – Unit, integration, end‑to‑end tests executed in CI.  
-2. **Manual Validation** – UX Architect conducts usability testing on the built feature.  
-3. **Security Review** – Pen‑test snapshot and vulnerability scan.  
-4. **Accessibility Audit** – Manual and automated checks against WCAG 2.2 AA.  
+| # | Principle |
+|---|-----------|
+| 1 | **Orchestrated Routing** – All work for ambitious creative sites must flow through the **Creative‑Site‑Orchestrator**. |
+| 2 | **Strategic Divergence** – Divergent or strategic decisions are captured, reviewed, and recorded before any downstream execution. |
+| 3 | **Gate‑Controlled Build** – No code or artifact is built until an explicit gate approval is recorded. |
+| 4 | **Single Approval Artifact** – Each turn (iteration) produces **one** approved artifact that authorizes the next stage. |
+| 5 | **Representative Slice First** – Early work delivers a minimal, representative slice to validate assumptions before scaling. |
+| 6 | **Explicit Stage Declaration** – Every response must declare **Stage, Primary Skill, Supporting Skills, Artifact, Gate, Code Permission**. |
+| 7 | **Decision Record & Knowledge Patch** – Each stage concludes with a **Decision Record** and a **Project Knowledge Patch** (PKP) that updates the shared knowledge base. |
+| 8 | **Collaborative Skill Model** – One **Primary Skill** leads; up to **three Supporting Skills** review/constrain without hijacking output. |
+| 9 | **Preserved Roles** – Product Strategist, UX Architect, Art Director, Senior Product Engineer remain core collaborators. |
+|10| **Evidence Discipline** – All claims (UX, performance, security, accessibility) must be backed by verifiable evidence. |
+|11| **Anti‑Template UI** – UI work must avoid generic templates; it must be bespoke, purposeful, and inclusive. |
+|12| **Continuous QA** – QA is embedded in every stage, not a final after‑thought. |
 
 ---
 
-## 4. Evidence Discipline Checklist  
+## 3. Process Flow  
 
-- [ ] Business hypothesis documented and linked to metric.  
-- [ ] User research findings attached to design decisions.  
-- [ ] Security threat model signed off.  
-- [ ] Accessibility compliance report generated.  
-- [ ] Test coverage ≥ 80 % for new code.  
-- [ ] Performance benchmarks recorded.  
+```
+Plan → Gate → Build → Verify
+```
 
----
-
-## 5. Completion Report Template  
-
-> **Title:** *Feature/Project Name – Completion Report*  
-> **Date:** YYYY‑MM‑DD  
-> **Authors:** Product Strategist, UX Architect, Art Director, Senior Product Engineer  
-
-### 5.1 Summary  
-
-- Brief description of the problem solved and the solution delivered.  
-
-### 5.2 Outcomes  
-
-| Metric | Target | Actual | Status |
-|--------|--------|--------|--------|
-| Business KPI (e.g., conversion) | 5 % lift | 6.2 % lift | ✅ |
-| Accessibility score (aXe) | 100 % | 100 % | ✅ |
-| Security findings | 0 critical | 0 critical | ✅ |
-| Test coverage | 80 % | 87 % | ✅ |
-
-### 5.3 Evidence Archive  
-
-- Links to research artifacts, design files, code repository, test reports, security scans.  
-
-### 5.4 Lessons Learned  
-
-- What worked well, what to improve, and action items for future cycles.  
-
-### 5.5 Sign‑offs  
-
-| Role | Name | Signature |
-|------|------|-----------|
-| Product Strategist |  |  |
-| UX Architect |  |  |
-| Art Director |  |  |
-| Senior Product Engineer |  |  |
+Each phase follows the **Stage Declaration → Artifact → Gate → Decision Record → Project Knowledge Patch** pattern.
 
 ---
 
-## 6. Governance  
+## 4. Roles & Skills  
 
-- **Quarterly Review** – Charter effectiveness measured against delivery speed, quality, and user satisfaction.  
-- **Continuous Improvement** – Feedback loop from Completion Reports feeds into the next Planning phase.  
+| Role | Primary Skill | Typical Supporting Skills |
+|------|---------------|---------------------------|
+| Product Strategist | **Product Strategy** | UX Architect, Senior Product Engineer |
+| UX Architect | **User Experience Design** | Product Strategist, Art Director |
+| Art Director | **Creative Direction** | UX Architect, Senior Product Engineer |
+| Senior Product Engineer | **Engineering Architecture** | Product Strategist, UX Architect |
 
----  
+*Only the explicitly named primary and supporting skills may act in a given turn.*  
 
-*End of Document*
+---
+
+## 5. Orchestration Invariants (Embedded)  
+
+1. **Routing Invariant** – Every request for a creative site passes through the **creative‑site‑orchestrator** service.  
+2. **Gate Invariant** – No Build stage may commence without a **Gate Approval Artifact** signed by the Primary Skill and at least one Supporting Skill.  
+3. **Artifact Invariant** – Exactly **one** approved artifact (e.g., Strategic Plan, Design Mockup, Technical Specification) is produced per turn.  
+4. **Slice Invariant** – The first Build delivers a **representative slice** (≤ 20 % of total scope) to validate assumptions.  
+5. **Decision Record Invariant** – Each stage ends with a **Decision Record** documenting the rationale, alternatives, and chosen path.  
+6. **PKP Invariant** – The **Project Knowledge Patch** precisely updates the shared knowledge repository (e.g., `knowledge/base.json`).  
+
+---
+
+## 6. Stage Templates  
+
+### 6.1 Plan  
+
+**Stage:** Plan  
+**Primary Skill:** Product Strategist  
+**Supporting Skills:** UX Architect, Art Director, Senior Product Engineer  
+**Artifact:** Strategic Plan Document (Markdown)  
+**Gate:** Approval Required by Primary + ≥1 Supporting (sign‑off)  
+**Code Permission:** None  
+
+**Decision Record (Plan)**  
+- **Decision ID:** DR‑PLAN‑001  
+- **What:** Adopt a modular, story‑driven architecture for the creative site.  
+- **Why:** Aligns with brand storytelling, enables incremental scaling.  
+- **Alternatives Considered:** Monolithic SPA, Headless CMS only.  
+- **Outcome:** Modular approach selected.  
+
+**Project Knowledge Patch (Plan)**  
+```json
+{
+  "knowledge_version": "v1.2",
+  "stage": "plan",
+  "decision_id": "DR-PLAN-001",
+  "key_insights": [
+    "Modular architecture reduces time‑to‑market for new stories.",
+    "Headless CMS integration must support rich media pipelines."
+  ],
+  "open_questions": [
+    "Which CDN provider best supports adaptive streaming?"
+  ]
+}
+```
+
+---
+
+### 6.2 Gate  
+
+**Stage:** Gate  
+**Primary Skill:** Product Strategist  
+**Supporting Skills:** UX Architect, Senior Product Engineer  
+**Artifact:** Gate Approval Form (Signed PDF)  
+**Gate:** Formal sign‑off; no code changes permitted until this artifact is stored in `artifacts/gate/`.  
+**Code Permission:** None  
+
+**Decision Record (Gate)**  
+- **Decision ID:** DR‑GATE‑001  
+- **What:** Approve the Strategic Plan for execution.  
+- **Why:** All success criteria met; risk assessment cleared.  
+- **Outcome:** Gate opened; Build may proceed.  
+
+**Project Knowledge Patch (Gate)**  
+```json
+{
+  "knowledge_version": "v1.3",
+  "stage": "gate",
+  "decision_id": "DR-GATE-001",
+  "approved_artifact": "artifacts/plan/strategic-plan.md",
+  "next_stage": "build"
+}
+```
+
+---
+
+### 6.3 Build  
+
+**Stage:** Build  
+**Primary Skill:** Senior Product Engineer  
+**Supporting Skills:** UX Architect, Art Director  
+**Artifact:** Representative Slice – Minimal Viable Creative Component (Git repo `slice/`)  
+**Gate:** Must reference Gate Approval Form ID DR‑GATE‑001.  
+**Code Permission:** Write access to `src/`, `styles/`, `assets/` within the slice repository.  
+
+**Decision Record (Build)**  
+- **Decision ID:** DR‑BUILD‑001  
+- **What:** Implement the hero carousel slice using React + GSAP for animation.  
+- **Why:** Provides immediate visual impact; aligns with brand storytelling.  
+- **Alternatives Considered:** Pure CSS animation, Lottie files.  
+- **Outcome:** React + GSAP selected.  
+
+**Project Knowledge Patch (Build)**  
+```json
+{
+  "knowledge_version": "v1.4",
+  "stage": "build",
+  "decision_id": "DR-BUILD-001",
+  "slice_path": "slice/hero-carousel",
+  "performance_metrics": {
+    "first_contentful_paint_ms": 1200,
+    "accessibility_score": 95
+  }
+}
+```
+
+---
+
+### 6.4 Verify  
+
+**Stage:** Verify  
+**Primary Skill:** UX Architect  
+**Supporting Skills:** Product Strategist, Senior Product Engineer  
+**Artifact:** Verification Report (Markdown) – includes accessibility audit, security scan, performance benchmark, QA test results.  
+**Gate:** Acceptance criteria must be met; sign‑off recorded in `artifacts/verify/`.  
+**Code Permission:** None (read‑only review).  
+
+**Decision Record (Verify)**  
+- **Decision ID:** DR‑VERIFY‑001  
+- **What:** Accept the hero carousel slice for integration.  
+- **Why:** Passes WCAG AA, OWASP Top 10, and performance targets.  
+- **Outcome:** Verified; ready for scaling.  
+
+**Project Knowledge Patch (Verify)**  
+```json
+{
+  "knowledge_version": "v1.5",
+  "stage": "verify",
+  "decision_id": "DR-VERIFY-001",
+  "verification_summary": "All criteria satisfied; no blockers.",
+  "next_action": "Scale to full site implementation."
+}
+```
+
+---
+
+## 7. Continuous Governance  
+
+- **Weekly Orchestrator Sync** – The Creative‑Site‑Orchestrator reviews all open gates, pending decisions, and PKP updates.  
+- **Audit Trail** – Every artifact, decision record, and PKP is version‑controlled in the repository under `audit/`.  
+- **Escalation Path** – If a decision cannot be reached within the current turn, a **Strategic Divergence Review** is triggered, involving all four core roles and a senior stakeholder.  
+
+---
+
+## 8. Appendices  
+
+### A. Decision Record Template  
+
+| Field | Description |
+|-------|-------------|
+| Decision ID | Unique identifier (e.g., `DR-<STAGE>-<NNN>`) |
+| What | Concise description of the decision |
+| Why | Rationale, business impact, risk assessment |
+| Alternatives Considered | Brief list of other options evaluated |
+| Outcome | Final choice and any conditions attached |
+| Approved By | Primary + Supporting signatures (names, timestamps) |
+
+### B. Project Knowledge Patch (PKP) Schema  
+
+```json
+{
+  "knowledge_version": "string",
+  "stage": "plan|gate|build|verify",
+  "decision_id": "string",
+  "key_insights": ["string"],
+  "open_questions": ["string"],
+  "approved_artifact": "string (optional)",
+  "next_stage": "string (optional)",
+  "slice_path": "string (optional)",
+  "performance_metrics": {
+    "first_contentful_paint_ms": "number",
+    "accessibility_score": "number"
+  },
+  "verification_summary": "string (optional)",
+  "next_action": "string (optional)"
+}
+```
+
+---
+
+*All future contributions must follow the **Stage Declaration → Artifact → Gate → Decision Record → Project Knowledge Patch** pattern exactly as defined above.*

@@ -1,124 +1,102 @@
-# Quality Gates
+# prompts/quality-gates.md
 
-_Reusable English‑language approval gates for Lovable Workspace Skills._  
-Each gate defines **Pass Criteria**, **Fail Action**, and **Required Evidence** to ensure consistent, high‑quality deliverables.
+## Standard Header
+| Field                | Description |
+|----------------------|-------------|
+| **Current stage**    | The lifecycle stage of the prompt (e.g., Ideation, Draft, Review, Approved, Deployed). |
+| **Primary skill**    | The single most important skill the prompt exercises (must be one of the 23 library skills). |
+| **Supporting skills**| Up to three additional skills that complement the primary skill. |
+| **Expected artifact**| The deliverable the prompt is intended to produce (e.g., Markdown guide, JSON schema, UI mock‑up). |
+| **Approval gate**    | The gate that must be cleared before the artifact can be considered approved (e.g., Orchestration Gate). |
+| **Code changes allowed** | Yes / No – indicates whether the prompt may trigger code modifications. |
 
----
-
-## 1. Evidence Gate
-
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | All claims are supported by verifiable, publicly available data (e.g., research papers, official statistics, reputable articles). |
-| **Fail Action** | Halt progression. The author must provide or locate appropriate evidence before proceeding. |
-| **Required Evidence** | • Direct citations (URL, DOI, or reference) for every factual statement.<br>• Screenshots or archived copies for time‑sensitive sources.<br>• A brief rationale linking the evidence to the claim. |
-
----
-
-## 2. Problem Gate
-
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | The problem statement is **clear**, **specific**, and **user‑centered**, with measurable impact. |
-| **Fail Action** | Return to the problem definition phase. Refine the scope and user research. |
-| **Required Evidence** | • User research summary (interviews, surveys, analytics).<br>• Quantitative metrics (e.g., % of users affected, time lost).<br>• Example scenarios illustrating the pain point. |
+## Decision Record
+| Field                     | Description |
+|---------------------------|-------------|
+| **status**                | Draft / Proposed / Accepted / Rejected / Superseded |
+| **decisions**             | Concise list of key decisions made for this prompt (e.g., skill selection, scope, constraints). |
+| **evidence/assumptions**  | Links or references to data, research, or assumptions that support the decisions. |
+| **Project Knowledge Patch** | Summary of new knowledge added to the project repository (e.g., updated README, new examples). |
+| **next stage**            | The subsequent lifecycle stage after this decision record is approved. |
 
 ---
 
-## 3. MVP Gate
+## Quality Gates
 
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | The Minimum Viable Product (MVP) includes only the core features that solve the problem at a **usable** level. |
-| **Fail Action** | Trim scope or add missing core features. Re‑evaluate the MVP definition. |
-| **Required Evidence** | • List of included features with a justification for each.<br>• Exclusion rationale for non‑core features.<br>• Acceptance criteria that can be validated in a single sprint. |
+### 1. Evidence Gate
+- **Pass criteria**: All claims in the prompt are backed by verifiable data, citations, or reproducible experiments.  
+- **Fail action**: Prompt is sent back to the author for additional research or clarification.  
+- **Evidence required**: Links to studies, benchmark results, or internal data sets; annotated screenshots if applicable.
 
----
+### 2. Problem Gate
+- **Pass criteria**: The problem statement is clearly defined, scoped, and aligned with user needs or business objectives.  
+- **Fail action**: Re‑write the problem description; add user stories or use‑case diagrams.  
+- **Evidence required**: User research summary, stakeholder interview notes, or market analysis excerpt.
 
-## 4. PRD Gate
+### 3. MVP Gate
+- **Pass criteria**: The Minimum Viable Prompt (MVP) is identified, delivering core value with the smallest viable scope.  
+- **Fail action**: Reduce scope or split the prompt into multiple incremental versions.  
+- **Evidence required**: MVP definition table, success metrics, and a risk‑reduction plan.
 
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | The Product Requirements Document (PRD) is **complete**, **unambiguous**, and **testable**. |
-| **Fail Action** | Iterate on the PRD until all sections meet the checklist. |
-| **Required Evidence** | • Document covering: purpose, scope, user stories, functional & non‑functional requirements, UI mock‑ups, and success metrics.<br>• Traceability matrix linking requirements to user stories and acceptance tests. |
+### 4. PRD Gate
+- **Pass criteria**: A concise Product Requirements Document exists, covering functional and non‑functional requirements.  
+- **Fail action**: Draft or update the PRD before proceeding.  
+- **Evidence required**: PRD link or embedded excerpt; traceability matrix linking requirements to the prompt.
 
----
+### 5. Narrative Gate
+- **Pass criteria**: The narrative flow (intro, context, instructions, examples, conclusion) is logical and engaging.  
+- **Fail action**: Restructure the narrative; add missing sections or improve transitions.  
+- **Evidence required**: Outline diagram or storyboard; readability scores (e.g., Flesch‑Kincaid).
 
-## 5. Narrative Gate
+### 6. Art Direction Gate
+- **Pass criteria**: Visual or stylistic guidance (tone, branding, formatting) aligns with project style guide.  
+- **Fail action**: Apply the style guide; iterate with a designer if needed.  
+- **Evidence required**: Style guide reference, annotated mock‑ups, or color/font palettes.
 
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | The product narrative (tone, voice, story) aligns with brand guidelines and resonates with the target audience. |
-| **Fail Action** | Rewrite the narrative, optionally conducting a quick user test. |
-| **Required Evidence** | • Narrative draft with highlighted brand voice elements.<br>• Review notes from a brand steward or copy editor.<br>• Sample user feedback confirming resonance. |
+### 7. Representative Slice Gate
+- **Pass criteria**: A representative slice (sample prompt segment) demonstrates end‑to‑end behavior across all involved skills.  
+- **Fail action**: Expand the slice or create additional examples covering missing skill interactions.  
+- **Evidence required**: Executable snippet, test logs, and expected vs. actual output comparison.
 
----
+### 8. Implementation Gate
+- **Pass criteria**: Implementation details (algorithms, API calls, data pipelines) are fully specified and feasible.  
+- **Fail action**: Refine the technical design; address any missing dependencies.  
+- **Evidence required**: Architecture diagram, pseudo‑code, dependency list, and performance estimates.
 
-## 6. Art Direction Gate
+### 9. Accessibility Gate
+- **Pass criteria**: Prompt complies with accessibility standards (WCAG 2.1 AA or equivalent) for language, structure, and interaction.  
+- **Fail action**: Add alternative text, simplify language, or adjust interaction patterns.  
+- **Evidence required**: Accessibility audit checklist, screen‑reader test results, and remediation plan.
 
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | Visual assets follow the approved style guide (color palette, typography, iconography) and maintain accessibility contrast ratios. |
-| **Fail Action** | Revise assets to meet style and accessibility standards. |
-| **Required Evidence** | • Annotated mock‑ups or style‑checked screenshots.<br>• Contrast ratio report (WCAG AA minimum).<br>• Sign‑off from the Art Director or design lead. |
+### 10. Release Gate
+- **Pass criteria**: All release criteria (versioning, documentation, rollback plan) are satisfied.  
+- **Fail action**: Complete missing release artifacts; update changelog.  
+- **Evidence required**: Release notes, version tag, deployment script, and sign‑off from release manager.
 
----
+### 11. Creative Claims Gate
+- **Pass criteria**: Any creative or marketing claims are truthful, substantiated, and do not violate policy.  
+- **Fail action**: Revise claims; add supporting evidence or remove unverified statements.  
+- **Evidence required**: Claim justification document, legal review sign‑off, and A/B test results if applicable.
 
-## 7. Representative Slice Gate
-
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | A functional slice (e.g., a vertical prototype) demonstrates end‑to‑end flow for a representative user journey. |
-| **Fail Action** | Build or extend the slice until the complete journey is covered. |
-| **Required Evidence** | • Recorded walkthrough or interactive prototype link.<br>• Checklist of user steps covered.<br>• Usability notes confirming the slice is representative. |
-
----
-
-## 8. Implementation Gate
-
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | Code meets the project’s coding standards, passes automated tests, and is reviewed by peers. |
-| **Fail Action** | Refactor or add missing tests; reopen the code review. |
-| **Required Evidence** | • CI pipeline badge(s) (e.g., build passed, coverage ≥ 80%).<br>• Pull‑request review approvals (≥ 2 reviewers).<br>• Link to the merged PR or commit hash. |
-
----
-
-## 9. Accessibility Gate
-
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | All user‑facing components satisfy WCAG 2.1 **AA** criteria. |
-| **Fail Action** | Fix identified accessibility issues and re‑run audits. |
-| **Required Evidence** | • Automated audit report (e.g., axe, Lighthouse) with zero AA violations.<br>• Manual test checklist confirming keyboard navigation, screen‑reader labeling, and focus order.<br>• Sign‑off from an accessibility specialist. |
-
----
-
-## 10. Release Gate
-
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | The release package is versioned, documented, and passes a final smoke‑test in the staging environment. |
-| **Fail Action** | Block the release; address missing items before re‑submission. |
-| **Required Evidence** | • Release notes with version number and change log.<br>• Staging smoke‑test report (all critical paths passed).<br>• Approval from Release Manager or Product Owner. |
+### 12. Orchestration Gate (Standard Header & Governance)
+- **Purpose**: Ensures the prompt package conforms to project governance before any downstream work begins.  
+- **Pass criteria**:  
+  1. **Standard Header** – All required fields are present and correctly populated.  
+  2. **Primary / Supporting Skills** – Exactly one primary skill and no more than three supporting skills are listed, each from the approved 23‑skill taxonomy.  
+  3. **Plan/Build Permission** – The header’s “Code changes allowed” field matches the intended activity (e.g., “No” for pure content prompts).  
+  4. **Upstream Approvals** – All required upstream approvals (e.g., product owner, compliance, UX) are documented with signatures or approved tickets.  
+  5. **Approval Artifact** – A single, definitive approval artifact (e.g., signed Decision Record PDF or approved JIRA ticket) is attached.  
+  6. **Decision Record** – A complete Decision Record (see section above) is present and linked.  
+  7. **Project Knowledge Patch** – Any new knowledge introduced is captured in the project knowledge base and referenced.  
+- **Fail action**: Block further progress; return to author with a checklist of missing/incorrect items.  
+- **Evidence required**:  
+  - Filled Standard Header table.  
+  - Skill taxonomy verification screenshot or link.  
+  - Permission flag screenshot or policy reference.  
+  - Approval artifact (link or attachment).  
+  - Decision Record (link or embedded).  
+  - Knowledge patch commit hash or documentation URL.  
 
 ---
 
-## 11. Creative Claims Gate
-
-| Item | Description |
-|------|-------------|
-| **Pass Criteria** | All marketing or creative claims are truthful, non‑exaggerated, and legally compliant. |
-| **Fail Action** | Remove or revise the claim; obtain legal review if needed. |
-| **Required Evidence** | • Claim statement with supporting evidence (e.g., test results, certifications).<br>• Legal or compliance sign‑off.<br>• Documentation of any required disclaimer or attribution. |
-
----
-
-### How to Use
-
-1. **Integrate** each gate into your workflow (e.g., checklist, CI gate, or stage gate meeting).  
-2. **Document** the required evidence in a shared location (Confluence, GitHub, or project folder).  
-3. **Review** the evidence before moving to the next gate; enforce the *Fail Action* when criteria are not met.  
-
-By applying these gates consistently, Lovable Workspace Skills maintain rigor, transparency, and user‑centric quality across every project.
+*All gates must be documented in the prompt’s repository with the above pass/fail criteria and evidence links. The Orchestration Gate is the final gate before a prompt can move from **Draft** to **Approved**.*
